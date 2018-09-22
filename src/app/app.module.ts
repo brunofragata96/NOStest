@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TeamDetailsComponent } from './team-details/team-details.component';
+import { TeamsComponent } from './teams/teams.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TeamDetailsComponent,
+    TeamsComponent,
+    SidebarComponent,
+    SearchBarComponent,
   ],
   imports: [
     BrowserModule,
