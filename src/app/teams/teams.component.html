@@ -1,3 +1,10 @@
-<p>
-  teams works!
-</p>
+<h2>Teams</h2>
+<ul class="teams">
+  <li *ngFor='let team of teams' >
+    <span>{{team.name}}</span>
+    <span>{{team.goalsFor}}</span> 
+    <span>{{team.goalsAgainst}}</span> 
+    <span>{{team.goalsFor - team.goalsAgainst}}</span> 
+    <span>{{team.coach}}</span> 
+  </li>
+</ul>
