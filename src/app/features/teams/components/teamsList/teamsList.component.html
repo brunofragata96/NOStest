@@ -1,0 +1,32 @@
+
+<ul>
+    <li id="list-header">
+        <div class="string"><span>Equipa</span></div>
+        <div class="number"><span>Jogos</span></div>
+        <div class="number"><span>Vitórias</span></div>
+        <div class="number"><span>Derrotas</span></div>
+        <div class="number"><span>Empates</span></div>
+        <div class="string"><span>Treinador</span></div>
+        <div class="listIcons"><span></span></div>
+      </li>
+      <li class="list-item" *ngFor='let team of teams'>
+        <div class="string"><span>{{team.name}}</span></div>
+        <div class="number"><span>{{team.matchesPlayed}}</span></div>
+        <div class="number"><span>{{team.matchesWon}}</span></div>
+        <div class="number"><span>{{team.matchesLost}}</span></div>
+        <div class="number"><span>{{team.matchesPlayed - (team.matchesWon + team.matchesLost)}}</span></div>
+        <div class="string"><span>{{team.coach}}</span></div>
+        <div class ="listIcons">
+          <i [class.selected]="hero === selectedHero"
+             (click)="onSelect(team)" 
+             class="material-icons">
+             edit
+          </i>
+
+          <i class="material-icons"
+          (click)="onDelete(team)">
+          delete
+        </i>
+        </div>
+      </li>
+</ul>

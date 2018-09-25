@@ -1,0 +1,18 @@
+$colors: (
+    primary: #2E2E2E,
+    primary-light: lighten(#2E2E2E, 10%),
+    primary-dark: darken(#2E2E2E, 10%),
+    accent: lighten(#2E2E2E, 40%),
+    secondary: #4F61D3,
+    text: white,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+
+ul>li.list-item:hover {
+    background-color: color(accent);
+    cursor: pointer;
+}

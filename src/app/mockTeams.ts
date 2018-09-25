@@ -1,11 +1,11 @@
-import { Team } from './team';
+import { Team } from '@app/common/models/team';
 
 export const TEAMS: Team[] = [
-  { id: 0, name: 'Sporting', goalsFor: 10, goalsAgainst: 4, coach: 'José Peseiro'  },
-  { id: 1, name: 'Benfica', goalsFor: 7, goalsAgainst: 6, coach: 'Rui Vitória'  },
-  { id: 2, name: 'Porto', goalsFor: 8, goalsAgainst: 7, coach: 'Sérgio Conceição'  },
-  { id: 3, name: 'Braga', goalsFor: 6, goalsAgainst: 5, coach: 'Abel Ferreira'  },
-  { id: 4, name: 'Vitória SC', goalsFor: 9, goalsAgainst: 12, coach: 'Luís Castro'  },
-  { id: 5, name: 'Nacional', goalsFor: 5, goalsAgainst: 8, coach: 'Costinha'  },
-  { id: 6, name: 'Rio Ave', goalsFor: 4, goalsAgainst: 10, coach: 'José Manuel Gomes'  },
+  { id: 0, name: 'Sporting', matchesPlayed: 10, matchesWon: 8, matchesLost: 1, coach: 'José Peseiro'  },
+  { id: 1, name: 'Benfica', matchesPlayed: 10, matchesWon: 7, matchesLost: 2, coach: 'Rui Vitória'  },
+  { id: 2, name: 'Porto', matchesPlayed: 10, matchesWon: 4, matchesLost: 3, coach: 'Sérgio Conceição'  },
+  { id: 3, name: 'Braga', matchesPlayed: 10, matchesWon: 5, matchesLost: 3, coach: 'Abel Ferreira'  },
+  { id: 4, name: 'Vitória SC', matchesPlayed: 10, matchesWon: 2, matchesLost: 6, coach: 'Luís Castro'  },
+  { id: 5, name: 'Nacional', matchesPlayed: 10, matchesWon: 2, matchesLost: 8, coach: 'Costinha'  },
+  { id: 6, name: 'Rio Ave', matchesPlayed: 10, matchesWon: 0, matchesLost: 10, coach: 'José Manuel Gomes'  },
 ];

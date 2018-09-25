@@ -1,0 +1,44 @@
+$colors: (
+    primary: #2E2E2E,
+    primary-light: lighten(#2E2E2E, 10%),
+    primary-dark: darken(#2E2E2E, 10%),
+    accent: lighten(#2E2E2E, 40%),
+    secondary: #4F61D3,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+.navbar {
+    width: 100vw;
+    background-color: black;
+    height: 100px;
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        .logo {
+            display: inline-block;
+            position: absolute;
+            left: 2em;
+
+            img {
+                width: 175px;
+            }
+        }
+
+        ul {
+            width: 25%;
+            height: 100%;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            
+        }
+}

@@ -1,0 +1,47 @@
+$colors: (
+    primary: #2E2E2E,
+    primary-light: lighten(#2E2E2E, 10%),
+    primary-dark: darken(#2E2E2E, 10%),
+    accent: lighten(#2E2E2E, 40%),
+    secondary: #4F61D3,
+    text: white,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+.detailsContainer {
+    width: 25%;
+    margin: 0 auto;
+    background-color: color(primary);
+    padding: 2em;
+    color: white;
+    
+    h2 {
+        margin: 0 0 1em 0;
+    }
+
+    .teamDetails{
+        margin-bottom: 2em;
+}
+    }
+
+    .formDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        h2 {
+            align-self: flex-start;
+        }
+
+        input {
+            margin: 0.5em;
+        }
+        
+    }
+
+    
+
